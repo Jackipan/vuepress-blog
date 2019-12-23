@@ -9,5 +9,8 @@
     "docs:build": "vuepress build docs"
   },
   "author": "jackipan <2466366246@qq.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@vuepress/plugin-pwa": "^1.2.0"
+  }
 }
