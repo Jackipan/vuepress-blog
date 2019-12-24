@@ -1,8 +1,8 @@
 ---
 home: true
-heroImage: /home.jpg
+heroImage: /logo.ico
 actionText: 开始了解 →
-actionLink: /repository/
+actionLink: /blog/
 
 footer: MIT Licensed | Copyright © 2018-PanJiaChen
 ---
