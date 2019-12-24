@@ -38,11 +38,25 @@ module.exports = {
             '/leetcode/': [
                 'info'
             ]
+        },
+        lastUpdated: '上次更新',
+        repo: 'Jackipan/vuepress-blog',
+        editLinks: true,
+        docsDir: 'docs',
+        editLinkText: '在 GitHub 上编辑此页',
+        sidebarDepth: 3,
+        repo: 'https://github.com/jackipan/vuepress-blog', // 添加github链接
+    },
+    configureWebpack: {
+        resolve: {
+            alias: {
+                '@public': './public'
+            }
         }
     },
-    repo: 'https://github.com/jackipan/vuepress-blog', // 添加github链接
-    plugins: ['@vuepress/pwa', {
-        serviceWoker: true,
-        updatePopup: true
-    }]
+    markdown: {
+        config: md => {
+            md.use(require('ma'))
+        }
+    }
 }
