@@ -20,14 +20,12 @@ module.exports = {
             { text: '收藏', link: '/mark/' },
             { text: '书签', link: '/bookmark/' },
             { text: '面试', link: '/interview/' },
-            { text: 'leetcode', link: '/leetcode/' },
-            {
-                text: 'github', link: 'https://github.com/jackipan/',
-                // 这里是下拉列表展现形式。 
-                // items: [
-                //   { text: 'focus-outside', link: 'https://github.com/jackipan/' }
-                // ]
-            }
+            { text: 'leetcode', link: '/leetcode/' }
+            // {
+            //     items: [
+            //         { text: 'focus-outside', link: 'https://github.com/jackipan/' }
+            //     ]
+            // }
         ],
         // 为以下路由添加侧边栏
         sidebar: {
@@ -56,7 +54,7 @@ module.exports = {
     },
     markdown: {
         config: md => {
-            md.use(require('ma'))
+            md.use(require('markdown-it-include'))
         }
     }
 }
