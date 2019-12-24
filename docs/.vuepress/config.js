@@ -1,11 +1,17 @@
 module.exports = {
-    title: 'jackipan',  // 设置网站标题
-    head: [
-        ['link', { rel: 'icon', href: './logo.ico' }]
-    ],
-    dest: './dist',  // 设置输出目录
+    title: '前端收集',  // 设置网站标题
+    description: '笔记本',
+    // dest: './dist',  // 设置输出目录
     base: '/vuepress-blog/', // 设置站点服务器目录
-    repo: 'https://github.com/jackipan/vuepress-blog', // 添加github链接
+    head: [
+        [
+            'link',
+            {
+                rel: 'icon',
+                href: '/logo.ico'
+            }
+        ]
+    ],
     themeConfig: {
         // 添加导航栏
         nav: [
@@ -34,7 +40,8 @@ module.exports = {
             ]
         }
     },
-    plugins: ['@vuepress/pwa',{
+    repo: 'https://github.com/jackipan/vuepress-blog', // 添加github链接
+    plugins: ['@vuepress/pwa', {
         serviceWoker: true,
         updatePopup: true
     }]
