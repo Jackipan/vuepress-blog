@@ -1,5 +1,6 @@
 module.exports = {
     title: '前端收集',  // 设置网站标题
+    avatar: '/avatar.jpg',
     description: '笔记本',
     // dest: './dist',  // 设置输出目录
     base: '/vuepress-blog/', // 设置站点服务器目录
@@ -21,6 +22,7 @@ module.exports = {
             { text: '书签', link: '/bookmark/' },
             { text: '面试', link: '/interview/' },
             { text: 'leetcode', link: '/leetcode/' },
+            { text: 'vue', link: '/.vuepress/vue/' },
             {
                 text: 'github', link: 'https://github.com/jackipan/',
                 // 这里是下拉列表展现形式。 
